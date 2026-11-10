@@ -1,0 +1,95 @@
+/* Custom styles for PlateTrack AI Dashboard */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+code, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Indian High Security License Plate Style */
+.number-plate-pill {
+  font-family: 'JetBrains Mono', monospace;
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #111827;
+  border: 2px solid #111827;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.number-plate-pill::before {
+  content: "IND";
+  display: inline-block;
+  font-size: 8px;
+  font-weight: 900;
+  color: #1d4ed8;
+  margin-right: 6px;
+  padding-right: 4px;
+  border-right: 1.5px solid #94a3b8;
+  letter-spacing: 0;
+}
+
+.dark .number-plate-pill {
+  background: #f8fafc;
+  color: #090d16;
+  border-color: #334155;
+}
+
+/* Mode Button Active */
+.mode-btn.active {
+  background: #6366f1;
+  color: #ffffff !important;
+  box-shadow: 0 1px 2px rgba(99, 102, 241, 0.3);
+}
+
+.mode-btn.active span,
+.mode-btn.active i {
+  color: #ffffff !important;
+}
+
+/* Tab button active */
+.tab-btn.active {
+  color: #6366f1 !important;
+  border-bottom-color: #6366f1 !important;
+}
+
+/* Live stay ticker pulse */
+@keyframes soft-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.stay-time-live {
+  animation: soft-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Toast animation */
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.toast-animate {
+  animation: slide-in-right 0.25s ease-out forwards;
+}
+
+/* Sortable column header */
+.sortable-header {
+  user-select: none;
+}

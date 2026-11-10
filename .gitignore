@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Database and media uploads generated at runtime
+backend/plate_track.db
+backend/crops/*
+!backend/crops/.gitkeep
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/uploads/temp_*
+
+# Cloned upstream reference repository
+repo/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+.npm
+*.log
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
