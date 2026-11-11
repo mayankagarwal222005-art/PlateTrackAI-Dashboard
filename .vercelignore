@@ -1,6 +1,5 @@
 backend/
 repo/
-# *.py  # disabled to allow placeholder entrypoint
 *.pt
 *.mp4
 test_suite.py
