@@ -1,5 +1,8 @@
-src/
+backend/
 repo/
+src/
+*.py
+!app.py
 *.pt
 *.mp4
 test_suite.py
