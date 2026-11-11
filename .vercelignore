@@ -1,4 +1,4 @@
-backend/
+src/
 repo/
 *.pt
 *.mp4
